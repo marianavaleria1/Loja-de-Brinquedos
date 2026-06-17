@@ -122,6 +122,48 @@ Permitir ao usuário finalizar a execução do sistema.
 
 ---
 
+# Classe
+
+Neste trabalho utilizamos o conceito de classe, onde basicamente, criamos uma estrutura para representar um objeto do mundo real (este objeto pode ser real ou abstrato).
+A estrutura deste objeto é definida através de uma classe, neste trabalho, a classe Produto.
+
+A classe Produto contém atributos, são estes:
+- <b>Codigo</b> -> Definie o código produto
+- <b>Descricao</b> -> Define a descrição daquele produto
+- <b>PrecoCompra</b> -> Define o preço de compra daquele produto
+- <b>PrecoVenda</b> -> Define o preço de venda daquele produto
+- <b>Estoque</b> -> Define a quantidade em estoque daquele produto
+
+### Como utilizar uma objeto de uma classe?
+
+Para utilizarmos uma classe, primeiro precisamos instanciar (criar) um objeto a partir dela. Este objeto será uma variável do tipo Produto.
+
+```csharp
+Produto produto = new Produto();
+```
+
+A partir do objeto instanciado, podemos manipular seus atributos acessando da seguinte forma:
+```csharp
+produto.Codigo;
+```
+
+### Exemplos
+1. Atribuir uma descrição ao produto
+```csharp
+produto.Descricao = "Bola de futebol";
+```
+
+2. Incrementar a quantidade em estoque
+```csharp
+produto.Estoque++;
+```
+
+3. Exibindo o preço de venda de um produto
+```csharp
+Console.WriteLine($"Valor de venda: {produto.PrecoVenda}");
+```
+---
+
 # Regras de Negócio
 
 ## Código inexistente
